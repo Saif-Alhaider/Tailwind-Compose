@@ -1,11 +1,9 @@
 package com.saif_alhaider.tailwind_compose
 
-import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
+import com.saif_alhaider.tailwind_compose.ui.theme.TailwindTheme
 
 @Composable
 fun App() {
-    MaterialTheme {
-
-    }
+    TailwindTheme {}
 }
