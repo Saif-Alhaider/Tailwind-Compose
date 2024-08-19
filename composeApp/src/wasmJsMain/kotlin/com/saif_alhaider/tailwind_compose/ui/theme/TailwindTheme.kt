@@ -2,7 +2,6 @@ package com.saif_alhaider.tailwind_compose.ui.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
 
 
@@ -18,14 +17,10 @@ fun TailwindTheme(content: @Composable () -> Unit) {
     }
 }
 
-object Theme {
+object TailwindTheme {
     val colors: ColorPalette
-        @Composable
-        @ReadOnlyComposable
-        get() = localColorScheme.current
+        get() = ColorPalette()
 
     val dimensions: Dimensions
-        @Composable
-        @ReadOnlyComposable
-        get() = localDimension.current
+        get() = Dimensions()
 }

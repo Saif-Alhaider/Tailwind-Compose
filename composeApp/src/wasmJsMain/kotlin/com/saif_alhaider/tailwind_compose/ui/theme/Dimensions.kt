@@ -1,9 +1,18 @@
 package com.saif_alhaider.tailwind_compose.ui.theme
 
+import androidx.compose.runtime.Immutable
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+@Immutable
 data class Dimensions(
+    val size: Size = Size(),
+    val radius: Radius = Radius(),
+    val stroke: Stroke = Stroke()
+)
+
+@Immutable
+data class Size(
     val size4: Dp = 4.dp,
     val size8: Dp = 8.dp,
     val size12: Dp = 12.dp,
@@ -28,4 +37,24 @@ data class Dimensions(
     val size192: Dp = 192.dp,
     val size224: Dp = 224.dp,
     val size256: Dp = 256.dp
+)
+
+@Immutable
+data class Radius(
+    val none: Dp = 0.dp,
+    val small: Dp = 2.dp,
+    val normal: Dp = 4.dp,
+    val medium: Dp = 6.dp,
+    val large: Dp = 8.dp,
+    val xLarge: Dp = 12.dp,
+    val twoXLarge: Dp = 16.dp,
+    val threeXLarge: Dp = 24.dp,
+    val full: Dp = Int.MAX_VALUE.dp,
+)
+
+@Immutable
+data class Stroke(
+    val small: Dp = 2.dp,
+    val medium: Dp = 4.dp,
+    val large: Dp = 8.dp,
 )
