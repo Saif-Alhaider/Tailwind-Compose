@@ -8,7 +8,8 @@ import androidx.compose.ui.unit.dp
 data class Dimensions(
     val size: Size = Size(),
     val radius: Radius = Radius(),
-    val stroke: Stroke = Stroke()
+    val stroke: Stroke = Stroke(),
+    val spaceBetween: SpaceBetween = SpaceBetween()
 )
 
 @Immutable
@@ -57,4 +58,13 @@ data class Stroke(
     val small: Dp = 2.dp,
     val medium: Dp = 4.dp,
     val large: Dp = 8.dp,
+)
+
+@Immutable
+data class SpaceBetween(
+    val small: Dp = 2.dp,
+    val medium: Dp = 4.dp,
+    val large: Dp = 8.dp,
+    val xLarge: Dp = 12.dp,
+    val twoXLarge: Dp = 16.dp,
 )
