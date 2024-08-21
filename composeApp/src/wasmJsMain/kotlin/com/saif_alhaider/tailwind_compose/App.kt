@@ -5,5 +5,6 @@ import com.saif_alhaider.tailwind_compose.ui.theme.TailwindTheme
 
 @Composable
 fun App() {
-    TailwindTheme {}
+    TailwindTheme {
+    }
 }

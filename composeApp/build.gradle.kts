@@ -7,7 +7,11 @@ plugins {
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
 }
-
+compose.resources {
+    publicResClass = true
+    packageOfResClass = "com.saif_alhaider.tailwind_compose.resources"
+    generateResClass = always
+}
 kotlin {
     @OptIn(ExperimentalWasmDsl::class)
     wasmJs {
@@ -26,6 +30,8 @@ kotlin {
         }
         binaries.executable()
     }
+
+
     
     sourceSets {
         
