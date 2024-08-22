@@ -9,7 +9,8 @@ data class Dimensions(
     val size: Size = Size(),
     val radius: Radius = Radius(),
     val stroke: Stroke = Stroke(),
-    val spaceBetween: SpaceBetween = SpaceBetween()
+    val spaceBetween: SpaceBetween = SpaceBetween(),
+    val padding: Padding = Padding()
 )
 
 @Immutable
@@ -67,4 +68,15 @@ data class SpaceBetween(
     val large: Dp = 8.dp,
     val xLarge: Dp = 12.dp,
     val twoXLarge: Dp = 16.dp,
+)
+
+@Immutable
+data class Padding(
+    val none: Dp = 0.dp,
+    val small: Dp = 2.dp,
+    val medium: Dp = 4.dp,
+    val large: Dp = 8.dp,
+    val xLarge: Dp = 12.dp,
+    val twoXLarge: Dp = 16.dp,
+    val threeXLarge: Dp = 24.dp,
 )
